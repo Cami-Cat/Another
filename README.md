@@ -1,6 +1,9 @@
 # Another Serializer
 A Serializer and file management system made for Godot, built upon Cretezy's Godot-Object-Serializer to add file-saving, encrypting, decrypting and loading functionality.
 
+### CURRENT VERSION: 
+Godot 4.6.1 (Stable)
+
 # Attribution
 
 Cretezy's work: [Godot Object Serializer](https://github.com/Cretezy/godot-object-serializer?tab=readme-ov-file, "Godot Object Serializer") (I wouldn't have a clue how to do this without this project. It's all thanks to this guy!)
