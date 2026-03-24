@@ -238,6 +238,8 @@ static func encrypt_data(data_in : Variant) -> Variant:
 
 Luckily, decryption is much the same.
 
+## Deserialization
+
 But what about Deserialization? Objects were turned into `Dictionaries`, then a `PackedByteArray`, then an even longer encrypted `PackedByteArray`
 
 YesterdayLoader does much of the same, just in the opposite direction:
