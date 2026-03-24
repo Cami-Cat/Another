@@ -1,0 +1,12 @@
+[gd_scene format=3 uid="uid://bmjsh1nh7ku6x"]
+
+[ext_resource type="Script" uid="uid://00y11dog6tke" path="res://addons/another_serializer/Examples/Nodes/test_node.gd" id="1_j2q8x"]
+[ext_resource type="Script" uid="uid://c6m2x57rxg25v" path="res://addons/another_serializer/Examples/Resources/player_data.gd" id="2_112p8"]
+
+[sub_resource type="Resource" id="Resource_j2q8x"]
+script = ExtResource("2_112p8")
+metadata/_custom_type_script = "uid://c6m2x57rxg25v"
+
+[node name="Node" type="Node" unique_id=796167986]
+script = ExtResource("1_j2q8x")
+player_dat = SubResource("Resource_j2q8x")

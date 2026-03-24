@@ -50,7 +50,7 @@ class _ObjectRegistryEntry:
 			result[ObjectSerializer._type] = _type
 			return result
 		
-		# We ensure that the type of the objecft is stored first, as the header key.
+		# We ensure that the type of the object is stored first, as the header key.
 		var result := {ObjectSerializer._type : _type}
 		
 		# Do NOT save these properties. These are transient values that have no need to be saved.
