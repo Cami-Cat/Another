@@ -219,6 +219,8 @@ static func serialize_bytes(_var : Variant) -> PackedByteArray:
 	return var_to_bytes(serialize_var(_var))
 ```
 
+## Encryption && Decryption
+
 Encrypting is also fairly easy to understand. You'll find this inside the abstract class: `YesterdayEncryption`
 
 This class has one main variable: _crypto. This uses Godot's built-in `Crypto` class to handle all of the encryption and decryption. We just store it inside an abstract class to have something that always exists.
@@ -236,7 +238,14 @@ static func encrypt_data(data_in : Variant) -> Variant:
 	return _crypto.encrypt(key, data_in)
 ```
 
-Luckily, decryption is much the same.
+Luckily, decryption is much the same:
+
+```gdscript
+static func decrypt_data(data_in : Variant) -> Variant:
+	var key : CryptoKey = _validate_key()
+	if !key : return
+	return _crypto.decrypt(key, data_in)
+```
 
 ## Deserialization
 
